@@ -255,7 +255,7 @@ var times = `${moment.tz('Asia/Jakarta').format('HH:ss')}`
 var own = '6289501303263@s.whatsapp.net'
 var nodes = process.uptime()
 var premi = isPremium ? 'YES':'NO'
-const ids = [{buttonId: `${prefix}sc`, buttonText: {displayText: 'Source Code'}, type: 1}]
+//const ids = [{buttonId: `${prefix}sc`, buttonText: {displayText: 'Source Code'}, type: 1}]
 
 const liste = {
 contentText: exp.menu(prefix,pushname,sender,bbv,premi,nodes,own,times),
@@ -283,7 +283,7 @@ if (mek.key.fromMe) return reply(from,'maaf kamu sudah menjadi bot!')
 jadibot(reply, hazn, from)
 break
 case'sc':
-await hazn.sendMessage(from, '*Script*: https://github.com/MininxD/wangsafbot', MessageType.text, { detectLinks: true })
+//await hazn.sendMessage(from, '*Script*: https://github.com/MininxD/wangsafbot', MessageType.text, { detectLinks: true })
 break;
 case 'd':
 hazn.deleteMessage(from, { id: mek.message.extendedTextMessage.contextInfo.stanzaId, remoteJid: from, fromMe: true })
