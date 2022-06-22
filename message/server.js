@@ -229,7 +229,7 @@ await hazn.sendMessage(from, `@${sender.split("@")[0]}`, MessageType.text, {cont
 reply(from,'itu gambar?')
 }
 break
-case'joox':
+case'joox/////-(4':
 if(args.length < 1) return reply(from,':>')
 jis = args.join(' ')
 joks = await axios.get(`https://api.chipa.xyz/api/download/jooxdl?title=${jis}&apikey=NGS22ZWLMR2XRJY8Z8VTDP0L`)
@@ -240,7 +240,7 @@ buff = await getBuffer(`${joks.data.result.mp3_url}`)
 sendFile(from, `${joks.data.result.thumb}`, bbs).catch((e) => reply(from,exp.err()))
 await sendFile(from, `${joks.data.result.mp3_url}`)
 break;
-case'wiki':
+case'wiki///40219':
 if(args === 0) return reply(from,'mau cari apa?')
 reply(from,exp.wait())
 joink = args.join(' ')
@@ -278,7 +278,7 @@ listPremi += `${nomorList}. wa.me/${getAllPremiumUser()[i].split("@")[0]}\n➸ *
 }
 await reply(from, listPremi)
 break
-case 'jadibot':
+case 'jadibot//////49#+':
 if (mek.key.fromMe) return reply(from,'maaf kamu sudah menjadi bot!')
 jadibot(reply, hazn, from)
 break
@@ -289,18 +289,18 @@ case 'd':
 hazn.deleteMessage(from, { id: mek.message.extendedTextMessage.contextInfo.stanzaId, remoteJid: from, fromMe: true })
 break 
 break
-case 'stopjadibot':
+case 'stopjadibot//////+_(/':
 if (mek.key.fromMe) return reply(from,'maaf kamu bukan owner!')
 stopjadibot(reply)
 break
-case 'listjadibot':
+case 'listjadibot///)@/////':
 let iki = "*[ SESSION ]*"
 for(let aku of listjadibot) {
 iki += `*Nomor* : ${aku.jid.split('@')[0]}*Nama* : ${aku.name}\n*Device* : ${aku.phone.device_manufacturer}\n*Model* : ${aku.phone.device_model}\n\n`
 }
 reply(from,iki)
 break
-case'nulis':
+case'nulis/;)_/////':
 if(args.length < 1) return  reply(from,exp.txt())
 reply(from,exp.wait())
 imges = await getBuffer(`https://api.zeks.me/api/nulis?apikey=apivinz&text=${body.slice(6)}`)
@@ -330,7 +330,7 @@ reply(from,stdout)
 }
 })
 break
-case 'play':
+case 'play/!$////':
 if (args.length === 0) return reply(from,`Kirim perintah *${prefix}play* _Judul lagu yang akan dicari_`)
 var yteh = args.join('')
 reply(from,exp.wait())
