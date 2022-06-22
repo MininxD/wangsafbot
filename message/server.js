@@ -22,7 +22,7 @@ const Exif = require('../plugins/exif.js')
 const exif = new Exif()
 const { EmojiAPI } = require("emoji-api");
 const emoji = new EmojiAPI()
-prefix = ''
+prefix = '>'
 let pack = 'mininproject.xyz'
 let auth = ''
 
