@@ -316,7 +316,7 @@ exec(`ffmpeg -i ${dt} ${ran}`, (err) => {
 fs.unlinkSync(dt)
 if(err) return reply(from,exp.err())
 buffer = fs.readFileSync(ran)
-hazn.sendMessage(from, buffer, image, {quoted:mek,caption:'nih'})
+hazn.sendMessage(from, buffer, image, {quoted:mek,caption:''})
 fs.unlinkSync(ran)
 })
 break
