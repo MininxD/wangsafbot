@@ -259,7 +259,7 @@ const ids = [{buttonId: `${prefix}sc`, buttonText: {displayText: '</Script>'}, t
 
 const liste = {
 contentText: exp.menu(prefix,pushname,sender,bbv,premi,nodes,own,times),
-footerText: 'Version: Beta',
+footerText: 'Powered by mininproject.xyz',
 buttons: ids,
 headerType: 1
 }
