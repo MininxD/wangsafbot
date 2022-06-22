@@ -29,6 +29,13 @@ return`*Whatsapp Bot*
 *${prefix}play* _text_
 *${prefix}joox* _lagu_
 *${prefix}wiki* _[object]_
+
+
+
+
 `
 }
+
+
+
 
