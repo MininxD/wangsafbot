@@ -23,8 +23,8 @@ const exif = new Exif()
 const { EmojiAPI } = require("emoji-api");
 const emoji = new EmojiAPI()
 prefix = ''
-let pack = '@miinproject.xyz'
-let auth = '🫂'
+let pack = '@mininproject.xyz'
+let auth = '🎮'
 
 const getRandom = (mk) => {
 return `${Math.floor(Math.random() * 10000)}${mk}`
