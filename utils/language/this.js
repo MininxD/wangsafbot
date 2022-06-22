@@ -8,7 +8,7 @@ return`*Masukan Parameter Text!*`
 }
 
 exports.err = () => {
-return`*Ada Kesalahan!\n*Report To Admin:*\n*wa.me/+6289501303263*`
+return`*Ada Kesalahan!*`
 }
 
 exports.menu = (prefix,pushname,sender,bbv,premi,nodes,own,times) => {
