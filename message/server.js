@@ -50,7 +50,7 @@ var hours = Math.floor(seconds / (60 * 60));
 var minutes = Math.floor(seconds % (60 * 60) / 60);
 var seconds = Math.floor(seconds % 60);
     
-return `${pad(hours)}Jam - ${pad(minutes)}Menit -  ${pad(seconds)}Detik`
+return `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`
 }
 
 module.exports = (hazn) => {
