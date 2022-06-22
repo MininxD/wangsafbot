@@ -23,8 +23,8 @@ const exif = new Exif()
 const { EmojiAPI } = require("emoji-api");
 const emoji = new EmojiAPI()
 prefix = ''
-let pack = '@mininproject.xyz'
-let auth = '🎮'
+let pack = 'mininproject.xyz'
+let auth = ''
 
 const getRandom = (mk) => {
 return `${Math.floor(Math.random() * 10000)}${mk}`
@@ -230,7 +230,7 @@ reply(from,'itu gambar?')
 }
 break
 case'joox':
-if(args.length < 1) return reply(from,'lagu nya kak')
+if(args.length < 1) return reply(from,':>')
 jis = args.join(' ')
 joks = await axios.get(`https://api.chipa.xyz/api/download/jooxdl?title=${jis}&apikey=NGS22ZWLMR2XRJY8Z8VTDP0L`)
 size = `${joks.data.result.filesize}`
@@ -241,7 +241,7 @@ sendFile(from, `${joks.data.result.thumb}`, bbs).catch((e) => reply(from,exp.err
 await sendFile(from, `${joks.data.result.mp3_url}`)
 break;
 case'wiki':
-if(args === 0) return reply(from,'mau cari apeh')
+if(args === 0) return reply(from,'mau cari apa?')
 reply(from,exp.wait())
 joink = args.join(' ')
 WikipediaAllLaguage('id',`${joink}`).then((res => {
@@ -255,7 +255,7 @@ var times = `${moment.tz('Asia/Jakarta').format('HH:ss')}`
 var own = '6289501303263@s.whatsapp.net'
 var nodes = process.uptime()
 var premi = isPremium ? 'YES':'NO'
-const ids = [{buttonId: `${prefix}sc`, buttonText: {displayText: '</Script>'}, type: 1}]
+const ids = [{buttonId: `${prefix}sc`, buttonText: {displayText: 'Source Code'}, type: 1}]
 
 const liste = {
 contentText: exp.menu(prefix,pushname,sender,bbv,premi,nodes,own,times),
@@ -324,7 +324,7 @@ case 'term':
 if(!isOwner) return
 if (!args.join(' ')) return reply(from,exp.txt())
 exec(args.join(' '), (err, stdout) => {
-if (err) return reply(from,`SELF-BOT:~ ${err}`)
+if (err) return reply(from,`Whatsapp:~ ${err}`)
 if (stdout) {
 reply(from,stdout)
 }
